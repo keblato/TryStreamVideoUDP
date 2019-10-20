@@ -14,6 +14,7 @@ print("-----------2. Video de Rambo")
 print("-----------3. Noticias")
 
 input1 = input() 
+#-----------Cambiar la ip 
 ip = "udp://192.168.1.18:"
 if input1 == "1":
     ip = ip + "1337"

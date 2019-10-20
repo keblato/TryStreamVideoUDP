@@ -18,9 +18,12 @@ def work():
         print("Empezo")
         x = queue.get()
         print(x)
+
+
         if x == 1:
             while True:
-                print("Proceso 1")              
+                print("Proceso 1")    
+#------------------------------------------------ Cambiar direccion de los videos                                               y la IP          
                 p = subprocess.Popen('ffmpeg -i F:/ARCHIVOS/Documentos/GitHub/APRENDIENDO/Python/UDP/data/zeus.mp4 -f mpegts udp://192.168.1.18:1337', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                 stdout, stderr = p.communicate()
                 print(p.returncode)
